@@ -13,6 +13,7 @@ def handle(msg):
     command = msg['text']
     print 'Gelen: %s' % command
     words = command.split("/")
+    #/ isaretinden sonraki mesajı yazdırır
     device.show_message(words[1], font=SINCLAIR_FONT, delay=0.08)
     #smile
     device.letter(0, 1)
